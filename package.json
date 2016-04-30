@@ -5,6 +5,17 @@
     "todomvc-app-css": "^2.0.1"
   },
   "devDependencies": {
-    "jasmine-core": "^2.0.0"
+    "jasmine-core": "^2.0.0",
+    "eslint": "^2.9.0",
+    "esprima": "^2.7.2"
+  },
+  "eslintConfig": {
+    "parser": "esprima",
+    "rules": {
+      "semi": "error"
+    }
+  },
+  "scripts": {
+    "test": "eslint --quiet js"
   }
 }
